@@ -1,0 +1,6 @@
+@CloundStorage.API_HostAddress = http://localhost:5035
+
+GET {{CloundStorage.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
