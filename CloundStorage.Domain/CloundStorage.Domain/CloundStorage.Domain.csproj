@@ -8,10 +8,4 @@
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="File.TypeChecker" Version="4.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\CloundStorage.Domain\CloundStorage.Domain\CloundStorage.Domain.csproj" />
-  </ItemGroup>
 </Project>

@@ -10,8 +10,13 @@ public class StorageController : ControllerBase {
     [HttpPost]
     public IActionResult UploadImage(IFormFile file) {
 
-        var useCase = new UploadProfilePhotoUseCase();
-        useCase.Execute(file);
-        return Created();
+		try {
+            var useCase = new UploadProfilePhotoUseCase();
+            useCase.Execute(file);
+            return Created();
+        } catch (Exception) {
+			return new NotFoundResult();
+		}
+        
     }
 }

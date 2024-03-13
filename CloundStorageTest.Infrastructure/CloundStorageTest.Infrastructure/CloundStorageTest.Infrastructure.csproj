@@ -5,13 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.67.0.3309" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="File.TypeChecker" Version="4.0.0" />
-  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\CloundStorage.Domain\CloundStorage.Domain\CloundStorage.Domain.csproj" />
   </ItemGroup>
+
 </Project>
